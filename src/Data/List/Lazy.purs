@@ -117,7 +117,7 @@ import Data.Unfoldable (class Unfoldable, unfoldr)
 -- |
 -- | Running time: `O(n)`
 toUnfoldable :: forall f. Unfoldable f => List ~> f
-toUnfoldable = unfoldr (\xs -> (\rec -> Tuple rec.head rec.tail) <$> uncons xs)
+toUnfoldable = unfoldr (\xs -> (\rec_ -> Tuple rec_.head rec_.tail) <$> uncons xs)
 
 -- | Construct a list from a foldable structure.
 -- |

@@ -31,7 +31,7 @@ import Data.Unfoldable (class Unfoldable, unfoldr)
 
 toUnfoldable :: forall f. Unfoldable f => NonEmptyList ~> f
 toUnfoldable =
-  unfoldr (\xs -> (\rec -> Tuple rec.head rec.tail) <$> L.uncons xs) <<< toList
+  unfoldr (\xs -> (\rec_ -> Tuple rec_.head rec_.tail) <$> L.uncons xs) <<< toList
 
 fromFoldable :: forall f a. Foldable f => f a -> Maybe (NonEmptyList a)
 fromFoldable = fromList <<< L.fromFoldable

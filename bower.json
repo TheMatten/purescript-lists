@@ -27,7 +27,7 @@
     "purescript-newtype": "^3.0.0",
     "purescript-nonempty": "^5.0.0",
     "purescript-partial": "^2.0.0",
-    "purescript-prelude": "^4.0.0",
+    "purescript-prelude": "purescript/purescript-prelude#ci-0.14",
     "purescript-tailrec": "^4.0.0",
     "purescript-tuples": "^5.0.0",
     "purescript-unfoldable": "^4.0.0"
